@@ -1,0 +1,45 @@
+{
+  "name": "gulp-project-template",
+  "version": "1.0.0",
+  "description": "Template for frontend develop base on Gulp",
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint 'source/sass/**/*.scss' --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergeykonovalenko/gulp-project.git"
+  },
+  "author": "Sergey Konovalenko <sergeykonovalenko5550199@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergeykonovalenko/gulp-project"
+  },
+  "homepage": "https://github.com/sergeykonovalenko/gulp-project",
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-webp": "^4.0.1",
+    "posthtml-include": "^1.2.0"
+  },
+  "dependencies": {}
+}
