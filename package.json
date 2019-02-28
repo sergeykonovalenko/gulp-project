@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/sergeykonovalenko/gulp-project",
   "devDependencies": {
-    "autoprefixer": "^9.4.7",
-    "browser-sync": "^2.26.3",
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.5",
     "del": "^3.0.0",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "^1.2.1",
@@ -37,7 +37,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-svgstore": "^7.0.1",
-    "gulp-uglify": "^3.0.1",
+    "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
     "posthtml-include": "^1.2.0"
   },
