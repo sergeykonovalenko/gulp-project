@@ -15,7 +15,7 @@
             @if $item-width-before-slick-inited != 0 {
                 width: $item-width-before-slick-inited;
             }
-            display: inline-block;
+            display: inline-block !important;
             white-space: normal;
             vertical-align: top;
         }

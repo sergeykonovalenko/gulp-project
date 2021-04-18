@@ -1,0 +1,109 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+html *,
+html ::after,
+html ::before {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: $gray-1;
+    overflow-wrap: break-word;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+
+    &[href] {
+        cursor: pointer;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+}
+
+picture {
+    display: block;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0;
+    font-family: inherit;
+    color: $gray-1;
+    background-color: #fff;
+    border-radius: 0;
+
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+}
+
+/* Remove shadow from fields for WebKit browsers */
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+    appearance: none;
+}
+
+select {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    color: $color-main;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}

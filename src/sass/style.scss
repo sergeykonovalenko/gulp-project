@@ -1,17 +1,15 @@
 /* ==========================================================================
-   FONTS
-   ========================================================================== */
-@import "fonts";
-
-/* ==========================================================================
    SPECIFICATION
    ========================================================================== */
-@import "variables";
-@import "mixins";
-@import "global";
-@import "blocks/visually-hidden";
-@import "blocks/button";
+@import "spec/fonts";
+@import "spec/variables";
+@import "spec/mixins";
+@import "spec/global";
+@import "spec/visually-hidden";
+@import "spec/button";
+@import "spec/animation";
 
 /* ==========================================================================
    HOME PAGE
    ========================================================================== */
+@import "modules/container";
