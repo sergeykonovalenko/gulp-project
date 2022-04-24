@@ -11,13 +11,15 @@ import gulp from 'gulp';
 import babel from 'gulp-babel';
 import del from 'del';
 import plumber from 'gulp-plumber';
-import sass from 'gulp-sass';
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass(dartSass);
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import minify from 'gulp-csso';
 import uglify from 'gulp-uglify';
 import rename from 'gulp-rename';
-import imagemin from 'gulp-imagemin';
+import imagemin, {gifsicle, mozjpeg, optipng, svgo} from 'gulp-imagemin';
 import webp from 'gulp-webp';
 import svgstore from 'gulp-svgstore';
 import posthtml from 'gulp-posthtml';
@@ -50,7 +52,7 @@ export const css = () => {
         .pipe(plumber())
         .pipe(sass({
             outputStyle: 'expanded',
-            indentWidth: 4
+            indentWidth: 4,
         }))
         .pipe(postcss([
             autoprefixer()
@@ -69,7 +71,7 @@ export const cssVendor = () => {
 export const imgBase = () => {
     return gulp.src('src/img/base/*.*')
         .pipe(imagemin([
-            imagemin.svgo()
+            svgo()
         ]))
         .pipe(gulp.dest('build/img/base'));
 }
@@ -77,7 +79,7 @@ export const imgBase = () => {
 export const imgBg = () => {
     return gulp.src('src/img/bg/*.*')
         .pipe(imagemin([
-            imagemin.svgo()
+            svgo()
         ]))
         .pipe(gulp.dest('build/img/bg'));
 }
@@ -85,7 +87,7 @@ export const imgBg = () => {
 export const imgFavicon = () => {
     return gulp.src('src/img/favicon/*.*')
         .pipe(imagemin([
-            imagemin.svgo()
+            svgo()
         ]))
         .pipe(gulp.dest('build/img/favicon'));
 }
@@ -93,7 +95,7 @@ export const imgFavicon = () => {
 export const imgOg = () => {
     return gulp.src('src/img/og/*.*')
         .pipe(imagemin([
-            imagemin.svgo()
+            svgo()
         ]))
         .pipe(gulp.dest('build/img/og'));
 }
