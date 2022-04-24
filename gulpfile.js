@@ -117,7 +117,7 @@ export const jpg = () => {
         .pipe(gulp.dest('build/img'));
 }
 
-export const webp2 = () => {
+export const webp2 = async () => {
     gulp.series(png, jpg);
 }
 
@@ -179,21 +179,21 @@ export const watch = () => {
 }
 
 // Build
-// export const build = () => {
-//     gulp.series(
-//         clean,
-//         html,
-//         fonts,
-//         css,
-//         cssVendor,
-//         imgBase,
-//         imgBg,
-//         imgFavicon,
-//         imgOg,
-//         js,
-//         jsVendor,
-//     );
-// }
+export const build = async () => {
+    gulp.series(
+        clean,
+        html,
+        fonts,
+        css,
+        cssVendor,
+        imgBase,
+        imgBg,
+        imgFavicon,
+        imgOg,
+        js,
+        jsVendor,
+    );
+};
 
 // Default
 export default gulp.series(
