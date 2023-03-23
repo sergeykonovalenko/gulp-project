@@ -199,6 +199,8 @@ export const build = done => {
 export default gulp.series(
     gulp.parallel(
         clean,
+    ),
+    gulp.parallel(
         html,
         fonts,
         css,
