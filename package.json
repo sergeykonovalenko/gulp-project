@@ -1,19 +1,19 @@
 {
   "name": "gulp-project-template",
-  "version": "1.0.0",
-  "description": "Template for frontend develop base on Gulp",
+  "version": "2.0.0",
+  "description": "Template for frontend develop base on Gulp 5.0.0",
   "type": "module",
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint 'source/sass/**/*.scss' --syntax scss",
+    "stylelint": "stylelint 'src/**/*.scss' --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp"
   },
   "browserslist": [
     "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
+    "not IE 11",
+    "not dead"
   ],
   "repository": {
     "type": "git",
@@ -23,25 +23,25 @@
   "license": "MIT",
   "homepage": "https://github.com/sergeykonovalenko/gulp-project",
   "devDependencies": {
-    "@babel/core": "^7.17.9",
-    "@babel/preset-env": "^7.16.11",
-    "autoprefixer": "^10.4.5",
-    "browser-sync": "^2.27.9",
-    "del": "^6.0.0",
-    "gulp": "^4.0.2",
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "autoprefixer": "^10.4.17",
+    "browser-sync": "^3.0.2",
+    "gulp": "^5.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-csso": "^4.0.1",
-    "gulp-imagemin": "^8.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^9.0.0",
     "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^9.0.1",
+    "gulp-postcss": "^10.0.0",
     "gulp-posthtml": "^3.0.5",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-svgstore": "^9.0.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-webp": "^4.0.1",
-    "postcss": "^8.4.12",
-    "posthtml-include": "^1.7.3",
-    "sass": "^1.51.0"
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^5.0.0",
+    "postcss": "^8.4.35",
+    "posthtml-include": "^1.7.4",
+    "sass": "^1.71.1"
   }
 }
