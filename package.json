@@ -8,7 +8,8 @@
     "stylelint": "stylelint 'src/**/*.scss' --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,html,scss,css,md}\" --ignore-path .prettierignore"
   },
   "browserslist": [
     "last 2 versions",
@@ -42,6 +43,7 @@
     "gulp-webp": "^5.0.0",
     "postcss": "^8.5.3",
     "posthtml-include": "^2.0.1",
+    "prettier": "^3.5.3",
     "sass": "^1.85.1"
   }
 }
