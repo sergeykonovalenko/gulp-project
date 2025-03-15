@@ -2,7 +2,7 @@
  * Задача для обработки изображений
  */
 import gulp from 'gulp';
-import imagemin from 'gulp-imagemin';
+// import imagemin from 'gulp-imagemin';
 import webp from 'gulp-webp';
 import svgstore from 'gulp-svgstore';
 import rename from 'gulp-rename';
@@ -11,28 +11,28 @@ import { paths, webpOptions, svgSpriteOptions } from '../../config.js';
 // Оптимизация базовых изображений
 export const imgBase = () => {
   return gulp.src(paths.src.imgBase)
-    .pipe(imagemin())
+    // .pipe(imagemin())
     .pipe(gulp.dest(paths.build.imgBase));
 };
 
 // Оптимизация фоновых изображений
 export const imgBg = () => {
   return gulp.src(paths.src.imgBg)
-    .pipe(imagemin())
+    // .pipe(imagemin())
     .pipe(gulp.dest(paths.build.imgBg));
 };
 
 // Оптимизация фавиконок
 export const imgFavicon = () => {
   return gulp.src(paths.src.imgFavicon)
-    .pipe(imagemin())
+    // .pipe(imagemin())
     .pipe(gulp.dest(paths.build.imgFavicon));
 };
 
 // Оптимизация og-изображений
 export const imgOg = () => {
   return gulp.src(paths.src.imgOg)
-    .pipe(imagemin())
+    // .pipe(imagemin())
     .pipe(gulp.dest(paths.build.imgOg));
 };
 
