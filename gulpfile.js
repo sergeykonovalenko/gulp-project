@@ -21,8 +21,7 @@ import { css, cssVendor } from './gulp/tasks/styles.js';
 import { js, jsVendor } from './gulp/tasks/scripts.js';
 import {
   img,
-  pngToWebp,
-  jpgToWebp,
+  convertToWebp,
   sprite,
 } from './gulp/tasks/images.js';
 import { server, reload } from './gulp/tasks/server.js';
@@ -34,7 +33,7 @@ const setEnv = (done) => {
 };
 
 // Функция для запуска WebP преобразований
-export const webp = gulp.parallel(pngToWebp, jpgToWebp);
+export const webp = convertToWebp;
 
 // Наблюдение за изменениями файлов
 const watch = () => {
