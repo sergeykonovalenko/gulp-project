@@ -12,10 +12,7 @@ export const paths = {
     cssVendor: 'src/sass/vendor/*.css',
     js: 'src/js/*.js',
     jsVendor: 'src/js/vendor/*.js',
-    imgBase: 'src/img/base/*.*',
-    imgBg: 'src/img/bg/*.*',
-    imgFavicon: 'src/img/favicon/*.*',
-    imgOg: 'src/img/og/*.*',
+    img: 'src/img/**/*.*',
     pngImages: 'src/img/**/*.png',
     jpgImages: 'src/img/**/*.jpg',
     svgSprite: 'src/img/icon-*.svg'
@@ -26,10 +23,6 @@ export const paths = {
     fonts: 'build/fonts',
     css: 'build/css',
     js: 'build/js',
-    imgBase: 'build/img/base',
-    imgBg: 'build/img/bg',
-    imgFavicon: 'build/img/favicon',
-    imgOg: 'build/img/og',
     img: 'build/img'
   },
   watch: {
@@ -39,10 +32,7 @@ export const paths = {
     cssVendor: 'src/sass/vendor/*.css',
     js: 'src/js/*.js',
     jsVendor: 'src/js/vendor/*.js',
-    imgBase: 'src/img/base/*.*',
-    imgBg: 'src/img/bg/*.*',
-    imgFavicon: 'src/img/favicon/*.*',
-    imgOg: 'src/img/og/*.*'
+    img: 'src/img/**/*.*',
   }
 };
 

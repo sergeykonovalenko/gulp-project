@@ -1,12 +1,11 @@
-/*
-  Автор - Sergey Konovalenko.
-  Email: sergeykonovalenko5550199@gmail.com
-  Из Киева с любовью
-*/
-
 /**
- * Главный конфигурационный файл Gulp
- * Реорганизован согласно принципам SOLID
+ * Главный конфигурационный файл Gulp.
+ * Организован в соответствии с принципами SOLID.
+ *
+ * 📌 Функции:
+ * - Импортирует зависимости и задачи.
+ * - Определяет пути из config.js.
+ * - Управляет процессами сборки проекта.
  */
 
 import gulp from 'gulp';
@@ -21,14 +20,11 @@ import { html } from './gulp/tasks/html.js';
 import { fonts } from './gulp/tasks/fonts.js';
 import { css, cssVendor } from './gulp/tasks/styles.js';
 import { js, jsVendor } from './gulp/tasks/scripts.js';
-import { 
-  imgBase, 
-  imgBg, 
-  imgFavicon, 
-  imgOg, 
-  pngToWebp, 
-  jpgToWebp, 
-  sprite 
+import {
+  img,
+  pngToWebp,
+  jpgToWebp,
+  sprite,
 } from './gulp/tasks/images.js';
 import { server, reload } from './gulp/tasks/server.js';
 
@@ -49,10 +45,7 @@ const watch = () => {
   gulp.watch(paths.watch.cssVendor, { usePolling: true }, gulp.series(cssVendor));
   gulp.watch(paths.watch.js, { usePolling: true }, gulp.series(js, reload));
   gulp.watch(paths.watch.jsVendor, { usePolling: true }, gulp.series(jsVendor, reload));
-  gulp.watch(paths.watch.imgBase, { usePolling: true }, gulp.series(imgBase, reload));
-  gulp.watch(paths.watch.imgBg, { usePolling: true }, gulp.series(imgBg, reload));
-  gulp.watch(paths.watch.imgFavicon, { usePolling: true }, gulp.series(imgFavicon, reload));
-  gulp.watch(paths.watch.imgOg, { usePolling: true }, gulp.series(imgOg, reload));
+  gulp.watch(paths.watch.img, { usePolling: true }, gulp.series(img, reload));
 };
 
 // Сборка проекта
@@ -66,10 +59,7 @@ export const build = gulp.series(
     cssVendor,
     js,
     jsVendor,
-    imgBase,
-    imgBg,
-    imgFavicon,
-    imgOg,
+    img,
     sprite
   )
 );
