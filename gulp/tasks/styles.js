@@ -3,7 +3,7 @@
  */
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
-import dartSass from 'sass';
+import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 const sass = gulpSass(dartSass);
 import postcss from 'gulp-postcss';

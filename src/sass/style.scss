@@ -1,15 +1,15 @@
 /* ==========================================================================
    SPECIFICATION
    ========================================================================== */
-@import "spec/fonts";
-@import "spec/variables";
-@import "spec/mixins";
-@import "spec/global";
-@import "spec/visually-hidden";
-@import "spec/button";
-@import "spec/animation";
+@use "spec/fonts";
+@use "spec/variables";
+@use "spec/mixins";
+@use "spec/global";
+@use "spec/visually-hidden";
+@use "spec/button";
+@use "spec/animation";
 
 /* ==========================================================================
    HOME PAGE
    ========================================================================== */
-@import "modules/container";
+@use "modules/container";
