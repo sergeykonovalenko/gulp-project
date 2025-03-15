@@ -11,6 +11,7 @@ import autoprefixer from 'autoprefixer';
 import minify from 'gulp-csso';
 import rename from 'gulp-rename';
 import gulpif from 'gulp-if';
+import browserSync from 'browser-sync';
 import { paths, sassOptions } from '../../config.js';
 
 // Флаг для определения режима сборки (development/production)
@@ -27,11 +28,13 @@ export const css = () => {
     .pipe(gulp.dest(paths.build.css))
     .pipe(gulpif(isProd, minify()))
     .pipe(gulpif(isProd, rename({ suffix: '.min' })))
-    .pipe(gulpif(isProd, gulp.dest(paths.build.css)));
+    .pipe(gulpif(isProd, gulp.dest(paths.build.css)))
+    .pipe(browserSync.stream());
 };
 
 // Копирование CSS-библиотек
 export const cssVendor = () => {
   return gulp.src(paths.src.cssVendor)
-    .pipe(gulp.dest(paths.build.css));
+    .pipe(gulp.dest(paths.build.css))
+    .pipe(browserSync.stream());
 };

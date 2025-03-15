@@ -9,7 +9,6 @@
  */
 
 import gulp from 'gulp';
-import browserSync from 'browser-sync';
 
 // Импорт конфигурации
 import { paths } from './config.js';

@@ -28,7 +28,7 @@ export const paths = {
   watch: {
     html: 'src/*.html',
     fonts: 'src/fonts/*.{woff,woff2}',
-    scss: ['src/sass/*.{scss,sass}', 'src/sass/modules/*.{scss,sass}', 'src/sass/spec/*.scss'],
+    scss: ['src/sass/*.{scss,sass}', 'src/sass/modules/*.{scss,sass}', 'src/sass/spec/*.scss', 'src/sass/**/*.{scss,sass}'],
     cssVendor: 'src/sass/vendor/*.css',
     js: 'src/js/*.js',
     jsVendor: 'src/js/vendor/*.js',
