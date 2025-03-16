@@ -47,5 +47,29 @@
     "posthtml-include": "^2.0.1",
     "prettier": "^3.5.3",
     "sass": "^1.85.1"
-  }
+  },
+  "keywords": [
+    "gulp",
+    "gulp-starter",
+    "gulp-boilerplate",
+    "frontend",
+    "template",
+    "starter-kit",
+    "boilerplate",
+    "sass",
+    "scss",
+    "babel",
+    "webp",
+    "svg-sprite",
+    "bem",
+    "browsersync",
+    "postcss",
+    "autoprefixer",
+    "optimization",
+    "minification",
+    "development",
+    "build-tool",
+    "web-development",
+    "task-runner"
+  ]
 }
