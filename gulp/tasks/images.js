@@ -14,10 +14,15 @@ const isProd = process.env.NODE_ENV === 'production';
 // Оптимизация изображений
 export const img = () => {
   return gulp
-    .src(paths.src.img)
-    .pipe(gulpif(isProd, imagemin({
-      verbose: true // Выводим информацию об оптимизации
-    })))
+    .src(paths.src.img, { encoding: false })
+    .pipe(
+      gulpif(
+        isProd,
+        imagemin({
+          verbose: true, // Выводим информацию об оптимизации
+        })
+      )
+    )
     .pipe(gulp.dest(paths.build.img));
 };
 
