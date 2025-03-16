@@ -63,7 +63,6 @@ gulp-project/
 ├── .babelrc          # Конфигурация Babel
 ├── .editorconfig     # Конфигурация редактора
 ├── .gitignore        # Игнорируемые файлы Git
-├── .npmignore        # Файлы, исключаемые из npm пакета
 ├── .prettierrc       # Конфигурация Prettier
 ├── .prettierignore   # Файлы, игнорируемые Prettier
 ├── .stylelintrc      # Конфигурация StyleLint
