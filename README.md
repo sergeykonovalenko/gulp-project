@@ -44,16 +44,19 @@ gulp-project/
 ## Установка
 
 1. Клонировать репозиторий:
+
 ```bash
 git clone https://github.com/sergeykonovalenko/gulp-project.git
 ```
 
 2. Перейти в директорию проекта:
+
 ```bash
 cd gulp-project
 ```
 
 3. Установить зависимости:
+
 ```bash
 npm install
 ```
@@ -61,16 +64,19 @@ npm install
 ## Использование
 
 ### Режим разработки
+
 ```bash
 npm start
 ```
 
 ### Сборка проекта
+
 ```bash
 npm run build
 ```
 
 ### Сборка проекта для продакшн
+
 ```bash
 NODE_ENV=production npm run build
 ```

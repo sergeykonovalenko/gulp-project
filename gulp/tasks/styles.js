@@ -19,12 +19,11 @@ const isProd = process.env.NODE_ENV === 'production';
 
 // Обработка основных стилей
 export const css = () => {
-  return gulp.src(paths.src.scss)
+  return gulp
+    .src(paths.src.scss)
     .pipe(plumber())
     .pipe(sass(sassOptions))
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+    .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest(paths.build.css))
     .pipe(gulpif(isProd, minify()))
     .pipe(gulpif(isProd, rename({ suffix: '.min' })))
@@ -34,7 +33,5 @@ export const css = () => {
 
 // Копирование CSS-библиотек
 export const cssVendor = () => {
-  return gulp.src(paths.src.cssVendor)
-    .pipe(gulp.dest(paths.build.css))
-    .pipe(browserSync.stream());
+  return gulp.src(paths.src.cssVendor).pipe(gulp.dest(paths.build.css)).pipe(browserSync.stream());
 };

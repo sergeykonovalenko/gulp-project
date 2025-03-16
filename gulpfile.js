@@ -19,11 +19,7 @@ import { html } from './gulp/tasks/html.js';
 import { fonts } from './gulp/tasks/fonts.js';
 import { css, cssVendor } from './gulp/tasks/styles.js';
 import { js, jsVendor } from './gulp/tasks/scripts.js';
-import {
-  img,
-  convertToWebp,
-  sprite,
-} from './gulp/tasks/images.js';
+import { img, convertToWebp, sprite } from './gulp/tasks/images.js';
 import { server, reload } from './gulp/tasks/server.js';
 
 // Функция установки переменной среды
@@ -50,24 +46,8 @@ const watch = () => {
 export const build = gulp.series(
   setEnv,
   clean,
-  gulp.parallel(
-    html,
-    fonts,
-    css,
-    cssVendor,
-    js,
-    jsVendor,
-    img,
-    sprite
-  )
+  gulp.parallel(html, fonts, css, cssVendor, js, jsVendor, img, sprite)
 );
 
 // Режим разработки
-export default gulp.series(
-  setEnv,
-  build,
-  gulp.parallel(
-    server,
-    watch
-  )
-);
+export default gulp.series(setEnv, build, gulp.parallel(server, watch));

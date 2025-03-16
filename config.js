@@ -15,7 +15,7 @@ export const paths = {
     img: 'src/img/**/*.*',
     pngImages: 'src/img/**/*.png',
     jpgImages: 'src/img/**/*.jpg',
-    svgSprite: 'src/img/icon-*.svg'
+    svgSprite: 'src/img/icon-*.svg',
   },
   build: {
     base: 'build',
@@ -23,39 +23,44 @@ export const paths = {
     fonts: 'build/fonts',
     css: 'build/css',
     js: 'build/js',
-    img: 'build/img'
+    img: 'build/img',
   },
   watch: {
     html: 'src/*.html',
     fonts: 'src/fonts/*.{woff,woff2}',
-    scss: ['src/sass/*.{scss,sass}', 'src/sass/modules/*.{scss,sass}', 'src/sass/spec/*.scss', 'src/sass/**/*.{scss,sass}'],
+    scss: [
+      'src/sass/*.{scss,sass}',
+      'src/sass/modules/*.{scss,sass}',
+      'src/sass/spec/*.scss',
+      'src/sass/**/*.{scss,sass}',
+    ],
     cssVendor: 'src/sass/vendor/*.css',
     js: 'src/js/*.js',
     jsVendor: 'src/js/vendor/*.js',
     img: 'src/img/**/*.*',
-  }
+  },
 };
 
 export const serverConfig = {
   server: 'build/',
   notify: false,
-  open: true
+  open: true,
 };
 
 export const sassOptions = {
   outputStyle: 'expanded',
-  indentWidth: 4
+  indentWidth: 4,
 };
 
 export const webpOptions = {
   png: {
-    lossless: true
+    lossless: true,
   },
   jpg: {
-    quality: 85
-  }
+    quality: 85,
+  },
 };
 
 export const svgSpriteOptions = {
-  inlineSvg: true
+  inlineSvg: true,
 };

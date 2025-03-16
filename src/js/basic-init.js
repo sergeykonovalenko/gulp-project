@@ -1,4 +1,3 @@
 $(document).ready(function () {
-    'use strict';
-
+  'use strict';
 }); // end ready

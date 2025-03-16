@@ -1,23 +1,23 @@
 /// Reset list options
 @mixin reset-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /// Slick slider fix before initialised
 @mixin slider-fix($item-width-before-slick-inited: 0) {
-    &:not(.slick-initialized) {
-        font-size: 0;
-        white-space: nowrap;
-        overflow: hidden;
-        > * {
-            @if $item-width-before-slick-inited != 0 {
-                width: $item-width-before-slick-inited;
-            }
-            display: inline-block !important;
-            white-space: normal;
-            vertical-align: top;
-        }
+  &:not(.slick-initialized) {
+    font-size: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    > * {
+      @if $item-width-before-slick-inited != 0 {
+        width: $item-width-before-slick-inited;
+      }
+      display: inline-block !important;
+      white-space: normal;
+      vertical-align: top;
     }
+  }
 }

@@ -7,9 +7,8 @@ import include from 'posthtml-include';
 import { paths } from '../../config.js';
 
 export const html = () => {
-  return gulp.src(paths.src.html)
-    .pipe(posthtml([
-      include()
-    ]))
+  return gulp
+    .src(paths.src.html)
+    .pipe(posthtml([include()]))
     .pipe(gulp.dest(paths.build.html));
 };

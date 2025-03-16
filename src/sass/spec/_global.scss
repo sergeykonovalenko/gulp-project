@@ -1,114 +1,114 @@
 @use "variables";
 
 html {
-    box-sizing: border-box;
-    height: 100%;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 html *,
 html ::after,
 html ::before {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-width: 320px;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans", sans-serif;
-    color: variables.$gray-1;
-    overflow-wrap: break-word;
-    background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  color: variables.$gray-1;
+  overflow-wrap: break-word;
+  background-color: #fff;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 
-    &[href] {
-        cursor: pointer;
-    }
+  &[href] {
+    cursor: pointer;
+  }
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border-style: none;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-style: none;
 }
 
 picture {
-    display: block;
+  display: block;
 }
 
 input,
 select,
 textarea {
-    display: block;
-    width: 100%;
-    padding: 0;
-    font-family: inherit;
-    color: variables.$gray-1;
-    background-color: #fff;
-    border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  font-family: inherit;
+  color: variables.$gray-1;
+  background-color: #fff;
+  border-radius: 0;
 
-    &:hover,
-    &:focus {
-        outline: none;
-    }
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 }
 
 /* Remove shadow from fields for WebKit browsers */
-input:not([type=checkbox]):not([type=radio]),
+input:not([type="checkbox"]):not([type="radio"]),
 textarea,
 select {
-    appearance: none;
+  appearance: none;
 }
 
 select {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 button {
-    color: variables.$color-main;
+  color: variables.$color-main;
 }
 
 .container {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 @media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
+  .container {
+    max-width: 540px;
+  }
 }
 
 @media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
+  .container {
+    max-width: 720px;
+  }
 }
 
 @media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
+  .container {
+    max-width: 960px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .container {
-        max-width: 1170px;
-    }
+  .container {
+    max-width: 1170px;
+  }
 }
