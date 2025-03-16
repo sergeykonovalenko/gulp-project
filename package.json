@@ -1,7 +1,7 @@
 {
-  "name": "gulp-project-template",
+  "name": "gulp-project",
   "version": "2.0.0",
-  "description": "Template for frontend develop base on Gulp 5.0.0",
+  "description": "Modern Template for Frontend Development on Gulp 5.0.0",
   "type": "module",
   "scripts": {
     "editorconfig": "editorconfig-cli",
