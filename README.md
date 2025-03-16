@@ -4,6 +4,72 @@
   <img src="src/img/base/gulp.svg" alt="Gulp" width="120">
 </p>
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/gulp">
+    <img src="https://img.shields.io/badge/Gulp-5.0.0-CF4647?style=flat&logo=gulp&logoColor=white" alt="Gulp Version">
+  </a>
+  <a href="https://nodejs.org/en/">
+    <img src="https://img.shields.io/badge/Node.js-22.x-339933?style=flat&logo=node.js&logoColor=white" alt="Node.js Version">
+  </a>
+  <a href="https://www.npmjs.com/">
+    <img src="https://img.shields.io/badge/NPM-11.x-CB3837?style=flat&logo=npm&logoColor=white" alt="NPM Version">
+  </a>
+  <a href="https://github.com/sergeykonovalenko/gulp-project/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://sass-lang.com/">
+    <img src="https://img.shields.io/badge/Sass-CC6699?style=flat&logo=sass&logoColor=white" alt="Sass">
+  </a>
+  <a href="https://babeljs.io/">
+    <img src="https://img.shields.io/badge/Babel-F9DC3E?style=flat&logo=babel&logoColor=black" alt="Babel">
+  </a>
+  <a href="https://postcss.org/">
+    <img src="https://img.shields.io/badge/PostCSS-DD3A0A?style=flat&logo=postcss&logoColor=white" alt="PostCSS">
+  </a>
+  <a href="https://prettier.io/">
+    <img src="https://img.shields.io/badge/Prettier-F7B93E?style=flat&logo=prettier&logoColor=black" alt="Prettier">
+  </a>
+  <a href="https://editorconfig.org/">
+    <img src="https://img.shields.io/badge/EditorConfig-E0EFEF?style=flat&logo=editorconfig&logoColor=000" alt="EditorConfig">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://www.w3.org/html/">
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5">
+  </a>
+  <a href="https://www.w3.org/Style/CSS/">
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" alt="CSS3">
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript">
+  </a>
+  <a href="https://browsersync.io/">
+    <img src="https://img.shields.io/badge/Browsersync-FF7139?style=flat&logo=browsersync&logoColor=white" alt="Browsersync">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://stylelint.io/">
+    <img src="https://img.shields.io/badge/Stylelint-263238?style=flat&logo=stylelint&logoColor=white" alt="Stylelint">
+  </a>
+  <a href="https://bem.info/">
+    <img src="https://img.shields.io/badge/BEM-000000?style=flat&logo=bem&logoColor=white" alt="BEM">
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types#webp">
+    <img src="https://img.shields.io/badge/WebP-00A98F?style=flat&logo=webp&logoColor=white" alt="WebP">
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/SVG">
+    <img src="https://img.shields.io/badge/SVG-FFB13B?style=flat&logo=svg&logoColor=black" alt="SVG">
+  </a>
+  <a href="https://github.com/features/actions">
+    <img src="https://img.shields.io/badge/ESLint-4B32C3?style=flat&logo=eslint&logoColor=white" alt="ESLint">
+  </a>
+</p>
+
 Современный шаблон для фронтенд-разработки, основанный на Gulp 5.0.0. Проект организован в соответствии с принципами SOLID и современными практиками разработки.
 
 ## Особенности
@@ -112,15 +178,15 @@ npm run build
 
 ## Автор
 
-<div>
-  <strong>Сергей Коноваленко</strong>
-  <a href="mailto:sergeykonovalenko5550199@gmail.com" style="font-size: 0; margin-right: 5px;">
+<p>
+  <strong>Сергей Коноваленко</strong>&nbsp;&nbsp;
+  <a href="mailto:sergeykonovalenko5550199@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white" alt="Email">
-  </a>
-  <a href="https://t.me/sergeykonovalenko" style="font-size: 0;">
+  </a>&nbsp;
+  <a href="https://t.me/sergeykonovalenko">
     <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=flat&logo=telegram&logoColor=white" alt="Telegram">
   </a>
-</div>
+</p>
 
 ## Лицензия
 
