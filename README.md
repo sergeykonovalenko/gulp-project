@@ -139,12 +139,8 @@ npm run build
 
 <p>
   <strong>Сергей Коноваленко</strong>&nbsp;&nbsp;
-  <a href="mailto:sergeykonovalenko5550199@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white" alt="Email">
-  </a>&nbsp;
-  <a href="https://t.me/sergeykonovalenko">
-    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=flat&logo=telegram&logoColor=white" alt="Telegram">
-  </a>
+  <a href="mailto:sergeykonovalenko5550199@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://t.me/sergeykonovalenko"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=flat&logo=telegram&logoColor=white" alt="Telegram"></a>
 </p>
 
 ## Лицензия
