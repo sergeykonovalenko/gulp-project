@@ -7,10 +7,10 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'src/**/*.scss' --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,html,scss,css,md}\" --ignore-path .prettierignore",
     "build": "cross-env NODE_ENV=production gulp build",
     "dev": "cross-env NODE_ENV=development gulp",
-    "start": "npm run dev",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,html,scss,css,md}\" --ignore-path .prettierignore"
+    "start": "npm run dev"
   },
   "browserslist": [
     "last 2 versions",
