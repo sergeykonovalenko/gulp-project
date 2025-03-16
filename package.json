@@ -7,8 +7,9 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'src/**/*.scss' --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
-    "start": "gulp",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "dev": "cross-env NODE_ENV=development gulp",
+    "start": "npm run dev",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,html,scss,css,md}\" --ignore-path .prettierignore"
   },
   "browserslist": [
@@ -28,6 +29,7 @@
     "@babel/preset-env": "^7.26.9",
     "autoprefixer": "^10.4.21",
     "browser-sync": "^3.0.3",
+    "cross-env": "^7.0.3",
     "gulp": "^5.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-csso": "^4.0.1",
