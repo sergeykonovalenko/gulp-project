@@ -22,12 +22,6 @@ import { js, jsVendor } from './gulp/tasks/scripts.js';
 import { img, convertToWebp, sprite } from './gulp/tasks/images.js';
 import { server, reload } from './gulp/tasks/server.js';
 
-// Функция установки переменной среды
-const setEnv = (done) => {
-  process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-  done();
-};
-
 // Функция для запуска WebP преобразований
 export const webp = convertToWebp;
 
@@ -44,10 +38,9 @@ const watch = () => {
 
 // Сборка проекта
 export const build = gulp.series(
-  setEnv,
   clean,
   gulp.parallel(html, fonts, css, cssVendor, js, jsVendor, img, sprite)
 );
 
 // Режим разработки
-export default gulp.series(setEnv, build, gulp.parallel(server, watch));
+export default gulp.series(build, gulp.parallel(server, watch));
