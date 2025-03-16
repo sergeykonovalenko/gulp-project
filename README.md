@@ -1,4 +1,4 @@
-# Gulp Project Template 2.0
+# Gulp Project Template
 
 Современный шаблон для фронтенд-разработки, основанный на Gulp 5.0.0. Проект организован в соответствии с принципами SOLID и современными практиками разработки.
 
@@ -72,16 +72,10 @@ npm install
 npm start
 ```
 
-### Сборка проекта
-
-```bash
-npm run build
-```
-
 ### Сборка проекта для продакшн
 
 ```bash
-NODE_ENV=production npm run build
+npm run build
 ```
 
 ## Задачи Gulp
